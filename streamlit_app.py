@@ -69,7 +69,7 @@ def process_transactions(df):
                     {
                         "Debtor Reference": current_customer,
                         "Transaction Type": trans_type,
-                        "Document Number": doc_number,
+                        "Document Number": f"{trans_type}_{doc_number}",
                         "Document Date": doc_date,
                         "Document Balance": balance,
                     }
